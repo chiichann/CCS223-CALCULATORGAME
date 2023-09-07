@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+}
+.game-container{
+    justify-content: center;
+    background-color: #FAE25C;
+    height: 350px;
+    width: 300px;
+    padding-top: 20px;
+    margin-left: 40%;
+    margin-top: 10%;
+    border: 3px solid black;
+    border-radius: 10px;
+
+}
+
+.game-container:hover{
+    box-shadow: 0 0 20px #999;
+}
+
+h1{
+    background-color: #03B2BD;
+    border: 3px solid black;
+    width: 250px;
+    border-radius: 10px;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.icons i{
+    font-size: 100px;
+    padding-left: 5px;
+    color: black;
+}
+
+.minus{
+    background-color: #44D144;
+    width: 100px;
+    border: 10px;
+    border-radius: 10px; 
+    border: 3px solid black;
+    margin-right: 10px;
+}
+.minus:hover{
+    background-color: #29cc29;
+    transform: scale(1.1);
+}
+.plus{
+    background-color: #FF4E5E;
+    width: 100px;
+    border: 10px;
+    border-radius: 10px; 
+    border: 3px solid black;
+    margin-right: 10px;
+    transition: all .2 ease-in-out;
+}
+
+.plus:hover{
+    background-color: #eb2434;
+    transform: scale(1.1);
+}
+.times{
+    background-color: #D598DB;
+    width: 100px;
+    border: 10px;
+    border-radius: 10px; 
+    border: 3px solid black;
+    transition: all .2 ease-in-out;
+}
+
+.times:hover{
+    background-color: #d366dd;
+    transform: scale(1.1);
+}
+.divide{
+    background-color: #FE8352;
+    width: 100px;
+    border-radius: 10px; 
+    border: 3px solid black;
+    transition: all .2 ease-in-out;
+}
+.divide:hover{
+    background-color: #ff7038;
+    transform: scale(1.1);
+
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0 20px  40px;
+}
+
+.column{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 0  40px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Math Subtraction Game</title>
+
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+   <div class="main-container">
+      <div class="main">
+         
+
+         <center>
+         <h1><span> Subtraction </span> Quiz Game </h1>
+         </center>
+         <div class="main-box">
+            <div class="show-anwser"><span id="ans"></span></div>
+
+            <div class="box1">
+               <div class="box-col">
+                  <input type="textf" id="text" class="text11">
+               </div>
+
+               <div class="add-s">
+                  <p>-</p>
+               </div>
+
+                <div class="box-col">
+                  <input type="textf" id="text1" class="text11">
+               </div>
+
+            </div>
+
+            <div class="box2">
+               <input tpye="text" id="text2" placeholder="Input Answer">
+            </div>
+
+             <div class="box2">
+               <button class="btn" onclick="Game()"> Check Anwser</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class ="button">
+      <center>
+         <a href="main.html"><button>Return to Main Menu</button></a>
+      </center>
+   </div>
+
+   <script>
+      let n1 = Math.floor(Math.random()*100+1);
+      let n2 = Math.floor(Math.random()*100+1);
+
+      document.getElementById("text").value = n1;
+      document.getElementById("text1").value = n2;
+
+      let minus= n1 - n2;
+
+      function Game(){
+         var user= document.getElementById("text2").value;
+
+         if( user == minus){
+            document.getElementById("ans").innerHTML = "Well Done! Your Got the Correct Answer";
+         }else{
+             document.getElementById("ans").innerHTML = "Wrong! The Correct Answer is " + minus + ". Try Again";
+         }
+
+           var user= document.getElementById("text2").value = "";
+
+
+      n1 = Math.floor(Math.random()*100+1);
+      n2 = Math.floor(Math.random()*100+1);
+
+      document.getElementById("text").value = n1;
+      document.getElementById("text1").value = n2;
+
+      minus= n1 - n2;
+
+
+      }
+   </script>
+
+</body>
+</html>
